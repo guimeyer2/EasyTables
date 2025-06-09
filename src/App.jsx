@@ -8,9 +8,21 @@ function App() {
     <div className="min-h-screen bg-black text-white font-sans">
       <Header />
       <main className="relative isolate flex items-center justify-center min-h-screen">
-        <div className="-translate">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        >
+          <source src="/homemTrabalhando.mp4" type="video/mp4" />
+        </video>
+
+        <div className="absolute top-0 left-0 w-full h-full bg-black/80 z-10"></div>
+
+        <div className="relative z-20 -translate-y-8">
           <div className="flex flex-col items-center">
-            <h1 className="text-7xl font-bold text-white tracking-tight">
+            <h1 className="text-7xl font-bold text-white tracking-tight text-center">
               Crie tabelas em segundos,
             </h1>
             <p className="mt-4 text-5xl font-medium text-gray-300">
@@ -32,7 +44,7 @@ function App() {
           </div>
         </div>
 
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20">
           <div className="flex flex-col items-center gap-y-4">
             <p className="text-sm uppercase tracking-widest text-gray-400">
               Saiba mais
