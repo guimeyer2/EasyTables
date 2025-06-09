@@ -1,6 +1,7 @@
 import { CardPassos } from "./components/CardPassos";
 import { CardFuncionalidades } from "./components/CardFuncionalidades";
 import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -144,7 +145,8 @@ function App() {
             <span className="text-gray-500 text-2xl">Imagem aqui</span>
           </div>
         </div>
-      </section>
+      </section>{" "}
+      <Footer />
     </div>
   );
 }
