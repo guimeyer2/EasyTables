@@ -1,10 +1,10 @@
+import { CardPassos } from "./components/CardPassos";
 import { Header } from "./components/Header";
 
 function App() {
   return (
     <div className="min-h-screen bg-black text-white font-sans">
       <Header />
-
       <main className="relative isolate flex items-center justify-center min-h-screen">
         <div className="-translate">
           <div className="flex flex-col items-center">
@@ -51,7 +51,40 @@ function App() {
             </svg>
           </div>
         </div>
-      </main>
+      </main>{" "}
+      <section id="passo-a-passo" className="bg-black py-20 px-10">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold text-white">
+              Simples como contar até 3
+            </h2>
+            <p className="text-xl text-gray-400 mt-4">
+              Crie suas tabelas de forma intuitiva e rápida.
+            </p>
+          </div>
+
+          {/* container passo a passo */}
+          <div className="flex justify-center items-start gap-x-8">
+            <CardPassos
+              number="1"
+              title="Crie seu Projeto"
+              description="Dê um nome e determine suas colunas em segundos."
+            />
+            {/* seta */}
+            <CardPassos
+              number="2"
+              title="Adicione e Edite"
+              description="Preencha sua tabela com dados e escolha entre nossas funcionalidades."
+            />
+            {/* seta */}
+            <CardPassos
+              number="3"
+              title="Exporte e Compartilhe"
+              description="Exporte sua tabela em múltiplos formatos ou compartilhe com um link."
+            />
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
