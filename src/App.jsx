@@ -1,4 +1,5 @@
 import { CardPassos } from "./components/CardPassos";
+import { CardFuncionalidades } from "./components/CardFuncionalidades";
 import { Header } from "./components/Header";
 
 function App() {
@@ -82,6 +83,65 @@ function App() {
               title="Exporte e Compartilhe"
               description="Exporte sua tabela em múltiplos formatos ou compartilhe com um link."
             />
+          </div>
+        </div>
+      </section>
+      {/* funcionalidades */}
+      <div className="bg-black text-center py-20">
+        <p className="text-sm uppercase tracking-widest text-gray-400">
+          Saiba mais ainda!
+        </p>
+        <svg
+          className="mt-4 h-6 w-6 text-gray-400 animate-bounce mx-auto"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
+          />
+        </svg>
+      </div>
+      <section id="funcionalidades" className="bg-black py-20 px-10">
+        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+          {/* Coluna 1: Textos */}
+          <div className="text-left">
+            <h2 className="text-5xl font-bold text-white">
+              Nossas funcionalidades
+            </h2>
+            <p className="text-xl text-gray-400 mt-6 mb-8">
+              O Easy Tables vai além do básico. Integramos ferramentas poderosas
+              em uma interface simples, permitindo que você extraia o máximo dos
+              seus dados sem precisar ser um especialista.
+            </p>
+
+            <ul className="space-y-4 text-lg">
+              <CardFuncionalidades>
+                <strong>Fórmulas Inteligentes:</strong> Calcule soma, média e
+                mais com um clique.
+              </CardFuncionalidades>
+              <CardFuncionalidades>
+                <strong>Visualização de Dados:</strong> Transforme dados em
+                gráficos para facilitar a análise.
+              </CardFuncionalidades>
+              <CardFuncionalidades>
+                <strong>Estilização Simplificada:</strong> Personalize cores e
+                fontes com ferramentas visuais.
+              </CardFuncionalidades>
+              <CardFuncionalidades>
+                <strong>Exportação Flexível:</strong> Exporte suas tabelas para
+                PDF, CSV ou Excel facilmente.
+              </CardFuncionalidades>
+            </ul>
+          </div>
+
+          {/* Coluna 2: Placeholder da Imagem */}
+          <div className="h-96 bg-gray-900 rounded-lg flex items-center justify-center">
+            <span className="text-gray-500 text-2xl">Imagem aqui</span>
           </div>
         </div>
       </section>
