@@ -9,7 +9,7 @@ export function CardPassos({ number, title, description }) {
 
       <p className="text-gray-400">{description}</p>
 
-      {/* placeholder */}
+      {/* placeholder pra imagem */}
       <div className="mt-6 h-48 w-full bg-gray-900 rounded-lg flex items-center justify-center">
         <span className="text-gray-500">Imagem {number} aqui</span>
       </div>

@@ -99,7 +99,6 @@ function App() {
           </div>
         </div>
       </section>
-      {/* funcionalidades */}
       <div className="bg-black text-center py-20">
         <p className="text-sm uppercase tracking-widest text-gray-400">
           Saiba mais ainda!
@@ -121,7 +120,6 @@ function App() {
       </div>
       <section id="funcionalidades" className="bg-black py-20 px-10">
         <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-          {/* Coluna 1: Textos */}
           <div className="text-left">
             <h2 className="text-5xl font-bold text-white">
               Nossas funcionalidades
@@ -152,7 +150,7 @@ function App() {
             </ul>
           </div>
 
-          {/* Coluna 2: Placeholder da Imagem */}
+          {/* lembrar de colocar a imagem aqui */}
           <div className="h-96 bg-gray-900 rounded-lg flex items-center justify-center">
             <span className="text-gray-500 text-2xl">Imagem aqui</span>
           </div>
