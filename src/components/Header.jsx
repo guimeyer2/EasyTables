@@ -4,11 +4,15 @@ export function Header() {
   return (
     <header className="absolute top-0 left-0 w-full z-10">
       <div className="pt-10 pb-6">
-        <div className="w-full mx-auto px-36">
+        <div className="w-full mx-auto px-52">
           <nav className="relative flex items-center">
             <div className="z-10">
-              <a href="#" className="text-white font-bold text-4xl">
-                Easy Tables
+              <a href="#" className="flex items-center gap-x-3">
+                <img
+                  src="/novalogo.png"
+                  alt="Logo da EasyTables"
+                  className="h-12"
+                />
               </a>
             </div>
 
