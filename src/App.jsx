@@ -10,7 +10,6 @@ function App() {
       <Header />
       <main className="relative isolate grid min-h-screen">
         <div className="col-start-1 row-start-1 w-full h-full pt-[110px]">
-          {" "}
           <video
             autoPlay
             loop
@@ -209,12 +208,139 @@ function App() {
             </ul>
           </div>
 
-          {/* lembrar de colocar a imagem aqui */}
-          <div className="h-96 bg-gray-900 rounded-lg flex items-center justify-center">
-            <span className="text-gray-500 text-2xl">Imagem aqui</span>
+          <div className="grid grid-cols-2 gap-8">
+            {/* mais */}
+            <div className="flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="size-16 scale-110"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  fill="#2f3cee"
+                  d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13S23.168 3 16 3m0 2c6.087 0 11 4.913 11 11s-4.913 11-11 11S5 22.087 5 16S9.913 5 16 5m-1 5v5h-5v2h5v5h2v-5h5v-2h-5v-5z"
+                  stroke-width="0.6"
+                  stroke="#2f3cee"
+                />
+              </svg>
+            </div>
+            {/* menos */}
+            <div className="flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                className="size-16"
+              >
+                <path
+                  fill="none"
+                  stroke="#2f3cee"
+                  d="M4 8h8m2.5 0a6.5 6.5 0 1 1-13 0a6.5 6.5 0 0 1 13 0Z"
+                  strokeWidth="1.5"
+                />
+              </svg>
+            </div>
+
+            {/* gráfico pizza */}
+            <div className="flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="size-16"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#2f3cee"
+                  d="M11 2v20c-5.1-.5-9-4.8-9-10s3.9-9.5 9-10m2 0v9h9c-.5-4.8-4.2-8.5-9-9m0 11v9c4.7-.5 8.5-4.2 9-9z"
+                />
+              </svg>
+            </div>
+
+            {/* oio*/}
+            <div className="flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                className="size-16"
+              >
+                <g fill="none" stroke="#2f3cee" strokeWidth="1.5">
+                  <path
+                    strokeLinecap="round"
+                    d="M9 4.46A9.8 9.8 0 0 1 12 4c4.182 0 7.028 2.5 8.725 4.704C21.575 9.81 22 10.361 22 12c0 1.64-.425 2.191-1.275 3.296C19.028 17.5 16.182 20 12 20s-7.028-2.5-8.725-4.704C2.425 14.192 2 13.639 2 12c0-1.64.425-2.191 1.275-3.296A14.5 14.5 0 0 1 5 6.821"
+                  />
+                  <path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0Z" />
+                </g>
+              </svg>
+            </div>
+
+            {/* ia */}
+            <div className="flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                className="size-16"
+              >
+                <g
+                  fill="none"
+                  stroke="#2f3cee"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="1.5"
+                  color="#2f3cee"
+                >
+                  <path d="M20.998 13q.002-.705.002-1.5c0-4.478 0-6.718-1.391-8.109S15.979 2 11.5 2C7.022 2 4.782 2 3.391 3.391S2 7.021 2 11.5c0 4.478 0 6.718 1.391 8.109S7.021 21 11.5 21q.795 0 1.5-.002" />
+                  <path d="m18.5 15l.258.697c.338.914.507 1.371.84 1.704c.334.334.791.503 1.705.841L22 18.5l-.697.258c-.914.338-1.371.507-1.704.84c-.334-.334-.503.791-.841 1.705L18.5 22l-.258-.697c-.338-.914-.507-1.371-.84-1.704c-.334-.334-.791-.503-1.705-.841L15 18.5l.697-.258c.914-.338 1.371-.507 1.704.84c.334-.334.503-.791.841-1.705zM2 9h19M6.5 5.5h.009m3.991 0h.009" />
+                </g>
+              </svg>
+            </div>
+
+            {/* dolár*/}
+            <div className="flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                className="size-16"
+              >
+                <g
+                  fill="none"
+                  stroke="#2f3cee"
+                  strokeLinecap="round"
+                  strokeWidth="1.5"
+                >
+                  <path d="M12 6v12m3-8.5C15 8.12 13.657 7 12 7S9 8.12 9 9.5s1.343 2.5 3 2.5s3 1.12 3 2.5s-1.343 2.5-3 2.5s-3-1.12-3-2.5" />
+                  <path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5" />
+                </g>
+              </svg>
+            </div>
+
+            {/* exportar*/}
+            <div className="flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                className="size-16"
+              >
+                <path
+                  fill="#2f3cee"
+                  d="M8.71 7.71L11 5.41V15a1 1 0 0 0 2 0V5.41l2.29 2.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42l-4-4a1 1 0 0 0-.33-.21a1 1 0 0 0-.76 0a1 1 0 0 0-.33.21l-4 4a1 1 0 1 0 1.42 1.42M21 14a1 1 0 0 0-1 1v4a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-4a1 1 0 0 0-2 0v4a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-4a1 1 0 0 0-1-1"
+                />
+              </svg>
+            </div>
+
+            {/* exportar tabelinha*/}
+            <div className="flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                className="size-16"
+              >
+                <path
+                  fill="#2f3cee"
+                  d="M13 16h8v3q0 .825-.587 1.413T19 21h-6zm0-2V9h8v5zM3 7V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v2zm0 15v-2h2.55q-1.2-.575-1.937-1.7t-.738-2.55q0-1.975 1.388-3.363T7.625 11v2q-1.125 0-1.937.8t-.813 1.95q0 .975.6 1.725t1.525.95V16h2v6z"
+                />
+              </svg>
+            </div>
           </div>
         </div>
-      </section>{" "}
+      </section>
       <Footer />
     </div>
   );

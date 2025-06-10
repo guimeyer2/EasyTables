@@ -4,7 +4,7 @@ export function Footer() {
 
   return (
     <footer className="bg-[#0A0A0A] text-white border-t border-gray-800">
-      <div className="container mx-auto px-10 py-16">
+      <div className="container mx-auto px-10 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div className="space-y-4">
             <a href="#" className="text-white font-bold text-2xl">
