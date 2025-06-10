@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div className="space-y-4">
             <a href="#" className="text-white font-bold text-2xl">
-              EasyTables
+              Easy Tables
             </a>
             <p className="text-gray-400 max-w-xs">
               Crie, organize e compartilhe tabelas de forma simples, prática e
@@ -51,7 +51,7 @@ export function Footer() {
 
         <div className="mt-16 pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm">
-            © 2025 EasyTables. Todos os direitos reservados.
+            © 2025 Easy Tables. Todos os direitos reservados.
           </p>
           <div className="flex items-center gap-x-6 mt-4 sm:mt-0">
             <a
