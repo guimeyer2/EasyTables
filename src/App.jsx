@@ -2,30 +2,37 @@ import { CardPassos } from "./components/CardPassos";
 import { CardFuncionalidades } from "./components/CardFuncionalidades";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
+import { LordiconArrow } from "./components/LordiconArrow";
 
 function App() {
   return (
     <div className="min-h-screen bg-black text-white font-sans">
       <Header />
-      <main className="relative isolate flex items-center justify-center min-h-screen">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        >
-          <source src="/homemTrabalhando.mp4" type="video/mp4" />
-        </video>
+      <main className="relative isolate grid min-h-screen">
+        <div className="col-start-1 row-start-1 w-full h-full pt-[110px]">
+          {" "}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          >
+            <source src="/homemTrabalhando.mp4" type="video/mp4" />
+          </video>
+        </div>
 
-        <div className="absolute top-0 left-0 w-full h-full bg-black/80 z-10"></div>
+        {/* camada 2 */}
+        <div className="col-start-1 row-start-1 w-full h-full pt-[132px] bg-black/80"></div>
+        <div className="col-start-1 row-start-1 h-48 self-end bg-gradient-to-t from-black to-transparent"></div>
 
-        <div className="relative z-20 -translate-y-8">
+        {/* camada 3 */}
+        <div className="col-start-1 row-start-1 relative z-10 flex flex-col items-center justify-center">
           <div className="flex flex-col items-center">
-            <h1 className="text-7xl font-bold text-white tracking-tight text-center">
+            <h1 className="text-5xl lg:text-7xl font-bold text-white tracking-tight text-center">
               Crie tabelas em segundos,
             </h1>
-            <p className="mt-4 text-5xl font-medium text-gray-300">
+            <p className="mt-4 text-4xl lg:text-5xl font-medium text-gray-300">
               sem esforço
             </p>
             <p className="mt-8 max-w-2xl text-center text-lg text-gray-300">
@@ -77,24 +84,75 @@ function App() {
             </p>
           </div>
 
-          {/* container passo a passo */}
-          <div className="flex justify-center items-start gap-x-8">
+          <div className="flex justify-center items-center gap-x-8">
             <CardPassos
               number="1"
               title="Crie seu Projeto"
-              description="Dê um nome e determine suas colunas em segundos."
+              description="Dê um nome e comece a estruturar seus dados em segundos."
+              icon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="size-24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m3.75 9v6m3-3H9m1.5-12H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"
+                  />
+                </svg>
+              }
             />
-            {/* seta */}
+
+            <LordiconArrow />
+
             <CardPassos
               number="2"
               title="Adicione e Edite"
-              description="Preencha sua tabela com dados e escolha entre nossas funcionalidades."
+              description="Preencha suas tabelas com informações de forma fácil e flexível."
+              icon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="size-24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"
+                  />
+                </svg>
+              }
             />
-            {/* seta */}
+
+            <LordiconArrow />
+
             <CardPassos
               number="3"
               title="Exporte e Compartilhe"
-              description="Exporte sua tabela em múltiplos formatos ou compartilhe com um link."
+              description="Exporte suas tabelas em múltiplos formatos ou compartilhe com um link."
+              icon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="size-24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+                  />
+                </svg>
+              }
             />
           </div>
         </div>
@@ -140,8 +198,9 @@ function App() {
                 gráficos para facilitar a análise.
               </CardFuncionalidades>
               <CardFuncionalidades>
-                <strong>Estilização Simplificada:</strong> Personalize cores e
-                fontes com ferramentas visuais.
+                <strong>Templates prontos:</strong> Aproveite nossa galeria de
+                tabelas pré-montadas, como Orçamento Pessoal, Controle de
+                Hábitos e Planejamento de Viagem.
               </CardFuncionalidades>
               <CardFuncionalidades>
                 <strong>Exportação Flexível:</strong> Exporte suas tabelas para
